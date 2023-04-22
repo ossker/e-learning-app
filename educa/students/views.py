@@ -7,6 +7,7 @@ from braces.views import LoginRequiredMixin
 from .forms import CourseEnrollForm
 from django.views.generic.list import ListView
 from courses.models import Course
+from django.views.generic.detail import DetailView
 
 class StudentRegistrationView(CreateView):
     template_name = 'students/student/registration.html'
