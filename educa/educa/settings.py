@@ -41,7 +41,11 @@ INSTALLED_APPS = [
     'students.apps.StudentsConfig',
     'embed_video',
     'rest_framework',
+    'chat',
+    'channels',
 ]
+
+ASGI_APPLICATION = 'educa.routing.application'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
